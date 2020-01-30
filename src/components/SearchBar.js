@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TextInput, Button, StyleSheet} from 'react-native';
+import { View, TextInput, StyleSheet} from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 //create SearchBar component
