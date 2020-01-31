@@ -23,7 +23,7 @@ export default () => {
 // add immediate use of searchApi for results to display initially
 
     useEffect (() => {
-        searchApi('sushi');
+        searchApi('american');
     }, []);
 
     return [searchApi, results, errorMessage];
