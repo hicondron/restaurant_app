@@ -27,11 +27,12 @@ const styles= StyleSheet.create({
 
     backgroundStyle: {
         backgroundColor: 'rgb(226, 226, 226)',
-        height: 25,
+        height: 35,
         borderRadius: 5,
         marginHorizontal: 15,
         flexDirection: 'row',
         marginTop: 5,
+        marginBottom: 15,
     },
 
     inputStyle: {
@@ -43,6 +44,7 @@ const styles= StyleSheet.create({
         alignSelf: 'center',
         fontSize: 25,
         marginHorizontal: 15,
+    
     }
 
 });
