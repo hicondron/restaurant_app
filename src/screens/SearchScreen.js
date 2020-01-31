@@ -6,9 +6,10 @@ import RestaurantsList from '../components/RestaurantsList';
 
 //create Search Screen
 
-const SearchScreen = props => {
+const SearchScreen = ()=> {
     const [term, setTerm] = useState('');
     const [searchApi, results, errorMessage] = useRestaurants();
+
 //helper function to help with grouping
 
 const filterRestaurantsByPrice = (price) => {
@@ -27,9 +28,12 @@ const filterRestaurantsByPrice = (price) => {
         />
        {errorMessage ? <Text>{errorMessage}</Text> : null}
         <ScrollView>
-        <RestaurantsList results={filterRestaurantsByPrice('$')} title="Economical Restaurants" />
-        <RestaurantsList results={filterRestaurantsByPrice('$$')}title="Mid-Range Restaurants"/>
-        <RestaurantsList results={filterRestaurantsByPrice('$$$')}title= "Spendy Restaurants" />
+        <RestaurantsList results={filterRestaurantsByPrice('$')} title="Economical Restaurants" 
+        />
+        <RestaurantsList results={filterRestaurantsByPrice('$$')}title="Mid-Range Restaurants"
+       />
+        <RestaurantsList results={filterRestaurantsByPrice('$$$')}title= "Spendy Restaurants"
+        />
         </ScrollView>
     </>
     );
